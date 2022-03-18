@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    background: 0;
+    border: 0;
+    align-self: center;
+    margin-bottom: 30px;
+}
+
+.button {
+    background: 0;
+    border: 0;
+    font-size: 120px;
+    font-weight: 800;
+    color: #1CAC78;
+    cursor: pointer;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    background: linear-gradient(white 70%, #1CAC78);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .3s;
+}
+.button:hover:before{
+    opacity: .2;
+}

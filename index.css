@@ -1,16 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url(./vendor/reset.css);
 
-html {
+html {  
   background-color: #EEFCF6;
 }
 
-.App {
+.container {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 1090px;
   margin: 0 auto;
 }
+
+
 

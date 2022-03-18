@@ -1,0 +1,21 @@
+.header {
+    background: linear-gradient(#1CAC78, #1A9E6D);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 0 0 15px 15px;
+}
+
+.header__logo {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: white;
+}

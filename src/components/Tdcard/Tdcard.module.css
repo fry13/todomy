@@ -1,0 +1,54 @@
+.card {
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 30px 30px 0;
+    justify-self: center;
+    overflow: hidden;
+}
+
+.card:nth-of-type(4n) {
+    margin: 0 0 30px 0;
+}
+
+.card__header {
+    background: linear-gradient(#1CAC78, #1A9E6D);
+    height: 30px;
+    border-radius: 05px 15px 0 0;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__period {
+    color: rgba(255, 255, 255, .3);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.card__button {
+    margin-left: 10px;
+    background: 0;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.card__buttonImage {
+    opacity: .3;
+    width: 18px;
+    height: 18px;
+}
+
+.card__title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+
+

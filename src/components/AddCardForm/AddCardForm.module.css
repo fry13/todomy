@@ -1,0 +1,54 @@
+.addCardForm {
+    width: 250px;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    flex-direction: column;
+    position: relative;
+    top: -380px;
+}
+
+.inputLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.input {
+    border: #1CAC78 1px solid;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+    text-align: center;
+    transition: border-width .1s ease-in-out;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.input:focus {
+    outline: none;
+    border-width: 3px;
+}
+
+.inputDescription {
+    font-size: 11px;
+    color: rgba(0, 0, 0, .4);
+}
+
+.submitButton {
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(#1CAC78, #1A9E6D);
+    border: 0;
+    border-radius: 5px;
+    margin-top: 30px;
+    color: white;
+    cursor: pointer;
+}

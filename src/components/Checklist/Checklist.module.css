@@ -1,0 +1,7 @@
+.card__list {
+    width: 270px;
+    padding: 10px 30px 10px 10px;
+    overflow: hidden auto;
+    height: 260px;
+    list-style: none;
+}
