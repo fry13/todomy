@@ -1,12 +1,10 @@
 import React from 'react';
 import Tdcard from "../Tdcard/Tdcard";
 import cl from "./Cardlist.module.css";
-import AddCardButton from "../AddCardButton/AddCardButton";
-import AddCardForm from "../AddCardForm/AddCardForm";
 
 
 
-const Cardlist = ({cards}) => {
+const Cardlist = ({remove, cards, children}) => {
 
   const addNewCard =() => {
 
@@ -16,16 +14,14 @@ const Cardlist = ({cards}) => {
         <div className={cl.cardlist}>
             {cards.map(card =>
                 <Tdcard
+                    remove={remove}
                     card={card}
                     title={card.title}
                     body={card.body}
                     key={card.id}
                 />
             )}
-        <div>
-          <AddCardButton onClick={addNewCard} />
-          <AddCardForm />
-        </div>
+          {children}
 
         </div>
     );

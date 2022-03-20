@@ -5,8 +5,7 @@ import deleteImage from '../../img/trash.png';
 import Checklist from "../Checklist/Checklist";
 
 
-const Tdcard = ({title, body}) => {
-        //console.log(card)
+const Tdcard = ({card, remove, title, body}) => {
         return (
         <div className={cl.card}>
             <div className={cl.card__header}>
@@ -17,7 +16,7 @@ const Tdcard = ({title, body}) => {
                     <button className={cl.card__button}>
                         <img className={cl.card__buttonImage} src={editImage} alt="Edit"/>
                     </button>
-                    <button className={cl.card__button}>
+                    <button onClick={() => remove(card)} className={cl.card__button}>
                         <img className={cl.card__buttonImage} src={deleteImage} alt="Edit"/>
                     </button>
                 </div>
